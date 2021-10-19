@@ -17,13 +17,11 @@ header h2 {
 footer {
     background-image:linear-gradient(to bottom right, gold, black);
     padding: 20px 0;
-    position:absolute;
     bottom: 0;
-    width: 100%;
-    height: auto;
 }
 
 .jumbotron {
+    margin: 0;
     padding: 30px;
     background-image: url("/images/pjCollect.jpg");
     background-size: 100% 100%;
@@ -34,4 +32,16 @@ row-content {
     padding: 50px 0;
     border-bottom: 1px ridge;
     min-height: 200px;
+}
+
+#header1 {
+    font-size: 16px;
+}
+
+#rowBottom {
+    margin: 20px;
+}
+
+.navbar {
+    background-color: gold;
 }
