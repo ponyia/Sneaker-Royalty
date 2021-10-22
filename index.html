@@ -39,16 +39,63 @@
                     <li class="nav-item"><a class="nav-link" href="aboutSR.html"><i class="fa fa-info-circle fa-lg"></i> About SR</a></li>
                     <li class="nav-item"><a class="nav-link" href="/contact.html"><i class="fa fa-phone-square fa-lg"></i> Contact</a></li>
                 </ul>
+                <span class="navbar-text ml-auto">
+                    <a role="button" data-toggle="modal" data-target="#loginModal">
+                        <i class="fa fa-sign-in"></i> Sign In
+                    </a>
+                </span>
             </div>
         </div>
     </nav>
+
+    <div id="loginModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Sign In</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="userName">User Name</label>
+                                    <input type="text" class="form-control form-control-sm" id="userName" placeholder="Enter User Name">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Enter Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label">Save Sign In Information</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign In</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="container">
         <!--Sneaker King Display-->
         <div class="row row-content text-center">
             <div class="col">
                 <h2>2021 Sneaker King 1</h2>
-                <img width= "300 px" height="auto" src="/images/sneakerKing1.jfif" />
+                <img width= "600 px" height="auto" src="/images/sneakerKing1.jfif" />
+                <p>The current Sneaker King is Prince Onyia from Houston Texas. His shoe collection is just ridiculous.
+                    Collecting over 3,000 pairs of high level collectable sneakers, he has racked up points and currently
+                    has the most points of any Sneaker Royalty User. His favorite shoes are the Air Yeezy 2 'Red October'
+                    but he has so much more to his collection. View his collection <a href="#">here</a>.
+                </p>
             </div>
         </div>
         <!--Sneaker King Prospect Display-->
@@ -58,36 +105,41 @@
                 <h3>Top 3 Prospects:</h3>
             </div>
         </div>
-        <div class="row row-content text-center">
-            <div class="col-4">
-                <img width= "135 px" height="135 px" src="/images/snk2.jpeg" />
-            </div>
-            <div class="col-4">
-                <img width= "135 px" height="135 px" src="/images/snk3.jpg" />
-            </div>
-            <div class="col-4">
-                <img width= "135 px" height="135 px" src="/images/snk4.jpg" />
-            </div>
-        </div>
-        <!--Up Coming Releases-->
-        <div class="row row-content text-center">
-            <div class="col">
-                <h2>Upcoming Releases</h2>
-            </div>
-        </div>
         <div id="rowBottom" class="row row-content text-center">
-            <div class="col-4">
-                <img width= "135 px" height="135 px" src="/images/jordan14.jpg" />
-            </div>
-            <div class="col-4">
-                <img width= "135 px" height="135 px" src="/images/nikeSB2women.jpg" />
-            </div>
-            <div class="col-4">
-                <img width= "135 px" height="135 px" src="/images/nikeSB.jpg" />
+            <div class="col-12">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item"><a class="nav-link active" href="#pjTucker" role="tab" data-toggle="tab">PJ Tucker - Pro Basketball Player</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#craigTownsend" role="tab" data-toggle="tab">Craig Townsend</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#chrisJohnson" role="tab" data-toggle="tab">Chris Johnson</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade show active" id="pjTucker">
+                        <img width= "400 px" height="auto px" src="/images/snk2.jpeg" />
+                        <p>NBA star PJ Tucker has also joined the show and is a part of the Sneaker Royalty familey. 
+                         He is currently crowned the "Sneaker King of the NBA" but here is hasn't earned it yet. He is
+                        coming for the top spot as he has been adding to his chamber daily. Let's see what happens at the 
+                        end of the year when the Sneaker King 2 is announced.  
+                        </p>
+                    </div>    
+                    <div role="tabpanel" class="tab-pane fade show" id="craigTownsend">      
+                        <img width= "400 px" height="auto px" src="/images/snk3.jpg" />
+                        <p>Craig Townsend is another Sneaker Royalty user that is in the top 4 and is looking to claim the
+                            the top spot. He is from London and sports one of the biggest collections as well. Look for him to
+                            make some noise at the end of the year. 
+                        </p>
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade show" id="chrisJohnson">
+                        <img width= "400 px" height="auto px" src="/images/snk4.jpg" />
+                        <p>Chris Johnson come all the way from Toronto and currently has the most shoes of any Sneaker Royalty
+                            user. However, he has alot of standard release shoes which is holding him back a little points wise. 
+                            He is said to be hunting for some at least 6 rare release shoes. If that happens look for him to be
+                            the next Sneaker King. 
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
     <!--Footer-->
     <footer>
         <div class="container">
